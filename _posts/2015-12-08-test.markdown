@@ -1,8 +1,0 @@
----
-layout: post
-title:  "테스트"
-categories: yb
----
-
-
-테스트입니다.
