@@ -33,7 +33,7 @@ gulp.task('script:plugins', function(){
 
 	gulp.src(paths.src.scripts + '_plugins/**/*.js')
 		.pipe(concat('plugins.js'))
-		.pipe(gulp.dest('./_site' + paths.dist.scripts))
+		.pipe(gulp.dest('./_site/' + paths.dist.scripts))
 		.pipe(gulp.dest(paths.dist.scripts))
 });
 
@@ -46,7 +46,7 @@ gulp.task('script', function() {
 		.pipe(rename({
 			suffix: '.min'
 		}))
-		.pipe(gulp.dest('./_site' + paths.dist.scripts))
+		.pipe(gulp.dest('./_site/' + paths.dist.scripts))
 		.pipe(gulp.dest(paths.dist.scripts))
 });
 
@@ -63,7 +63,7 @@ gulp.task('style', function(){
 			cascade: false
 		}))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./_site' + paths.dist.styles))
+		.pipe(gulp.dest('./_site/' + paths.dist.styles))
 		.pipe(gulp.dest(paths.dist.styles))
 });
 
