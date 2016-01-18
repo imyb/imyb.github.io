@@ -100,7 +100,7 @@ gulp.task('watch', ['jekyll-build'], function(){
 	gulp.watch(paths.src.scripts + '_plugins/**/*.js', ['script:plugins']);
 	gulp.watch([paths.src.scripts + '*.js', '!' + paths.src.scripts + 'plugins.js', '!' + paths.src.scripts + '*.min.js'], ['script']);
 	gulp.watch([paths.src.styles + '*.scss', paths.src.styles + '_plugins/**/*.css'], ['style']);
-	gulp.watch(['*.html', '_includes/**/*.html', '_layouts/**/*.html', '_posts/**/*', '_config.yml'], ['jekyll-build']);
+	gulp.watch(['*.md', '*.html', '_includes/**/*.html', '_layouts/**/*.html', '_posts/**/*', '_config.yml'], ['jekyll-build']);
 });
 
 

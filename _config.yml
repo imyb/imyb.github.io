@@ -25,4 +25,4 @@ exclude:
   - 'node_modules'
   - 'package.json'
   - 'gulpfile.js'
-  - 'static/css/*.scss'
+  - 'static/css/**/*.scss'

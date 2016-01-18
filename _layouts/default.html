@@ -26,26 +26,23 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <h1><a href="/">imyb</a></h1>
-
-      <nav class="">
-      <a href="/about">about</a>
-      <a href="#work">work</a>
-      <a href="#aticle">aticle</a>
-      </nav>
+      <div class="inner-wrap">
+        <nav class="site-nav">
+          <a href="/">home</a>
+          <a href="/about">about</a>
+          <a href="/work">work</a>
+          <!-- <a href="#blog">blog</a> -->
+        </nav>
+      </div>
     </header>
 
     <div class="container">
-      <div class="content">
-      {{ content }}
+      <div class="inner-wrap">
+        <div class="content">
+        {{ content }}
+        </div>
       </div>
     </div>
-
-    <footer class="footer">
-      {% if site.github_username %}
-        {% include icon-github.html username=site.github_username %}
-      {% endif %}
-    </footer>
   </div>
 
   <!-- ========================================
