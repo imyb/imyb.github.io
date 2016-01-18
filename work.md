@@ -7,7 +7,9 @@ permalink: /work/
 
 
 
-### PCN
+
+**PCN.** 2014.06 ~ 2015.08.
+
 - **삼성서울병원 2차 고도화 구축**
   *2014.08  ~ 2015.08 (12개월)*<br>
   <http://www.samsunghospital.com><br>
@@ -19,10 +21,10 @@ permalink: /work/
   html, css, javascript
 
 
-<br>
 
 
-### PIXDINE
+
+**PIXDINE.** 2011.01 ~ 2013.09.
 
 - **법무법인 태평양 구축**
   *2013.07 ~ 2013.09 (2개월)*<br>
@@ -90,10 +92,10 @@ permalink: /work/
   html, css
 
 
-<br>
 
 
-### ONNETSOFT
+
+**ONNETSOFT.** 2009.06 ~ 2010.11.
 
 - **동작구 어린이집 구축**
   *2010.05 ~ 2010.07 (2개월)*<br>

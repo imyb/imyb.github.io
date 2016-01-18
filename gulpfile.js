@@ -33,6 +33,7 @@ gulp.task('script:plugins', function(){
 
 	gulp.src(paths.src.scripts + '_plugins/**/*.js')
 		.pipe(concat('plugins.js'))
+		.pipe(uglify())
 		.pipe(gulp.dest('./_site/' + paths.dist.scripts))
 		.pipe(gulp.dest(paths.dist.scripts))
 });
