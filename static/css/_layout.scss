@@ -1,5 +1,10 @@
-.wrapper {
+html,
+body {
+	height: 100%;
+}
 
+.wrapper {
+	height: 100%;
 }
 
 .inner-wrap {
@@ -10,6 +15,7 @@
 }
 
 .header {
+	z-index: 200;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,16 +40,40 @@
 			}
 		}
 	}
-
 }
 
 .container {
+	z-index: 100;
+	position: relative;
+	min-height: 100%;
 	padding: 80px 0 80px 0;
+	box-sizing: border-box;
 }
 
-.intro-heading {
+
+.home {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		margin-right: -0.375em;
+		vertical-align: middle;
+	}
+}
+
+
+.home-title {
+	display: inline-block;
 	text-align: center;
 	letter-spacing: -1px;
+	vertical-align: middle;
 
 	h1 {
 		margin: 0;
