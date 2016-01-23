@@ -3,108 +3,135 @@ var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify'),
 	jshint = require('gulp-jshint'),
-	sass = require('gulp-sass'),
-	scsslint = require('gulp-scss-lint'),
+	sass = require('gulp-ruby-sass'),
 	autoprefixer = require('gulp-autoprefixer'),
 	sourcemaps = require('gulp-sourcemaps'),
 	watch = require('gulp-watch'),
-	webserver = require('gulp-webserver'),
+	browserSync = require('browser-sync').create(),
 	cp = require('child_process');
 
 
-
-/* paths */
+/* ==========================================================================
+   paths
+   ========================================================================== */
 var paths = {
-		root : './',
 		src : {
-			styles : './static/css/',
-			scripts : './static/js/'
+			script : ['./static/js/script.js'],
+			script_plugins : ['./static/js/_plugins/**/*.js'],
+			style : ['./static/scss/**/*.scss'],
+			html : ['./**/*.html']
 		},
 		dist : {
-			styles : './static/css/',
-			scripts : './static/js/'
+			script : './static/js/',
+			style : './static/css/'
+		},
+		site : {
+			script : './_site/static/js/',
+			style : './_site/static/css/'
 		}
-	};
+
+	}
 
 
+/* ==========================================================================
+   error log
+   ========================================================================== */
+function errorlog(err){
 
-/* script */
-gulp.task('script:plugins', function(){
+	console.error(err.message);
+	this.emit('end');
+}
 
-	gulp.src(paths.src.scripts + '_plugins/**/*.js')
-		.pipe(concat('plugins.js'))
-		.pipe(uglify())
-		.pipe(gulp.dest('./_site/' + paths.dist.scripts))
-		.pipe(gulp.dest(paths.dist.scripts))
-});
 
-gulp.task('script', function() {
+/* ==========================================================================
+   script Task
+   ========================================================================== */
+gulp.task('script', ['script_plugins'], function() {
 
-	gulp.src([paths.src.scripts + '*.js', '!' + paths.src.scripts + 'plugins.js', '!' + paths.src.scripts + '*.min.js'])
+	gulp.src(paths.src.script)
+		.pipe(sourcemaps.init())
 		.pipe(jshint())
 		.pipe(jshint.reporter('jshint-stylish'))
 		.pipe(uglify())
-		.pipe(rename({
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('./_site/' + paths.dist.scripts))
-		.pipe(gulp.dest(paths.dist.scripts))
+		.on('error', errorlog)
+		.pipe(rename({suffix: '.min'}))
+		.pipe(sourcemaps.write('./'))
+		.pipe(gulp.dest(paths.site.script))
+		.pipe(gulp.dest(paths.dist.script))
+		.pipe(browserSync.stream());
+});
+
+gulp.task('script_plugins', function() {
+
+	gulp.src(paths.src.script_plugins)
+		.pipe(concat('plugins.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest(paths.site.script))
+		.pipe(gulp.dest(paths.dist.script))
 });
 
 
+/* ==========================================================================
+   style Task
+   ========================================================================== */
+gulp.task('style', function() {
 
-/* style */
-gulp.task('style', function(){
-
-	gulp.src(paths.src.styles + '*.scss')
-		.pipe(sourcemaps.init())
-		.pipe(sass({outputStyle: 'compressed'/*'expanded'*/}).on('error', sass.logError))
+	sass(paths.src.style, {sourcemap: true, style: 'compressed'})
+		.on('error', errorlog)
 		.pipe(autoprefixer({
 			browsers: ["last 2 versions", "ie 8", "ie 7"],
 			cascade: false
 		}))
 		.pipe(sourcemaps.write('./'))
-		.pipe(gulp.dest('./_site/' + paths.dist.styles))
-		.pipe(gulp.dest(paths.dist.styles))
+		.pipe(gulp.dest(paths.site.style))
+		.pipe(gulp.dest(paths.dist.style))
+		.pipe(browserSync.stream());
 });
 
 
+/* ==========================================================================
+   server Task
+   ========================================================================== */
+gulp.task('browser-sync', function() {
 
-/* webserver */
-gulp.task('webserver', function() {
-
-	gulp.src('./_site/')
-		.pipe(webserver({
-			port: 9000,
-			livereload: true
-			//directoryListing: true,
-			//open: true,
-			//fallback: 'index.html'
-		}));
+	browserSync.init({
+		port: 8080,
+		server: {
+			baseDir: "./_site/"
+		}
+	});
 });
 
 
-
-/* jekyll-build */
+/* ==========================================================================
+   jekyll-build Task
+   ========================================================================== */
 var jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 
 gulp.task('jekyll-build', function (done) {
+
 	return cp.spawn(jekyll, ['build'], {stdio: 'inherit'})
 		.on('close', done);
 });
 
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 
-
-/* watch */
-gulp.task('watch', ['jekyll-build'], function(){
-
-	gulp.watch(paths.src.scripts + '_plugins/**/*.js', ['script:plugins']);
-	gulp.watch([paths.src.scripts + '*.js', '!' + paths.src.scripts + 'plugins.js', '!' + paths.src.scripts + '*.min.js'], ['script']);
-	gulp.watch([paths.src.styles + '*.scss', paths.src.styles + '_plugins/**/*.css'], ['style']);
-	gulp.watch(['*.md', '*.html', '_includes/**/*.html', '_layouts/**/*.html', '_posts/**/*', '_config.yml'], ['jekyll-build']);
+	browserSync.reload();
 });
 
 
+/* ==========================================================================
+   watch Task
+   ========================================================================== */
+gulp.task('watch', ['jekyll-build'], function() {
 
-/* default */
-gulp.task('default', ['script:plugins', 'script', 'style', 'webserver', 'watch']);
+	gulp.watch([paths.src.script, paths.src.script_plugins], ['script']);
+	gulp.watch([paths.src.style], ['style']);
+	gulp.watch(['*.md', '*.html', '_includes/**/*.html', '_layouts/**/*.html', '_posts/**/*', '_config.yml'], ['jekyll-rebuild']);
+});
+
+
+/* ==========================================================================
+   default Task
+   ========================================================================== */
+gulp.task('default',['script', 'style', 'browser-sync', 'watch']);
