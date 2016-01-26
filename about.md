@@ -64,7 +64,6 @@ permalink: /about/
 - jQuery
 - Sass/Compass
 - Gulp
-- Git/Svn
 
 
 ### Tools
