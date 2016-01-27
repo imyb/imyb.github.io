@@ -1,4 +1,4 @@
-!function($, window) {
+;(function($, window) {
 
 	'use strict';
 
@@ -9,4 +9,4 @@
 
 	});
 
-}(window.jQuery, window);
+})(window.jQuery, window);
