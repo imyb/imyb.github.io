@@ -15,9 +15,6 @@ permalink: /work/
   <http://www.samsunghospital.com><br>
   html, css, javascript
 
-- **건대병원 운영/유지보수**
-  *2014.06 ~ 2014.07 (2개월)*<br>
-  html, css, javascript
 
 
 
