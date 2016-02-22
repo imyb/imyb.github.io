@@ -17,7 +17,6 @@ permalink: /work/
 
 - **건대병원 운영/유지보수**
   *2014.06 ~ 2014.07 (2개월)*<br>
-  <http://www.kuh.ac.kr><br>
   html, css, javascript
 
 
@@ -75,18 +74,15 @@ permalink: /work/
 
 - **하이닉스 구축**
   *2011.05 ~ 2011.06 (1개월)*<br>
-  <http://www.hynix.com><br>
   다국어 작업<br>
   html, css
 
 - **코카콜라 모바일 구축**
   *2011.03 ~ 2011.04 (1개월)*<br>
-  <http://www.cocacola.co.kr/m><br>
   html, css
 
 - **코카콜라 구축**
   *2011.01 ~ 2011.03 (3개월)*<br>
-  <http://www.cocacola.co.kr><br>
   메인&서브 컨텐츠 작업<br>
   각 브랜드페이지 작업<br>
   html, css
