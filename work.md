@@ -6,6 +6,22 @@ permalink: /work/
 
 
 
+**FREELANCER.** 2016.04 ~ .
+
+- **PS&M 구축**
+  *2016.07 ~ 2016.07 (1개월)*<br>
+  html, css, javascript
+
+- **네이처리퍼블릭 모바일웹 구축**
+  *2016.05 ~ 2016.06 (1.5개월)*<br>
+  html, css, javascript
+
+- **올가홀푸드 모바일웹 구축**
+  *2016.04 ~ 2016.05 (1.5개월)*<br>
+  html, css, javascript
+
+
+<br>
 
 
 **PCN.** 2014.06 ~ 2015.08.
@@ -16,8 +32,7 @@ permalink: /work/
   html, css, javascript
 
 
-
-
+<br>
 
 
 **PIXDINE.** 2011.01 ~ 2013.09.
@@ -89,7 +104,7 @@ permalink: /work/
   html, css
 
 
-
+<br>
 
 
 **ONNETSOFT.** 2009.06 ~ 2010.11.
