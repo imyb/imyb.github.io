@@ -56,7 +56,7 @@ permalink: /about/
 - CSS3
 - JS
 - jQuery
-- Sass/Compass
+- Sass
 - Gulp
 - Git/SVN
 
