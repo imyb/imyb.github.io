@@ -5,8 +5,14 @@ permalink: /work/
 ---
 
 
+**ABBEYROAD.** 2017.01 ~ .
 
-**FREELANCER.** 2016.04 ~ .
+
+
+<br>
+
+
+**FREELANCER.** 2016.04 ~ 2016.09.
 
 - **PS&M 구축**
   *2016.07 ~ 2016.07 (1개월)*<br>
