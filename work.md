@@ -15,7 +15,7 @@ permalink: /work/
   - html, css
 
 
-<br>
+- - -
 
 
 **FREELANCER.** 2016.04 ~ 2016.09.
