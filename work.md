@@ -8,12 +8,10 @@ permalink: /work/
 ## ABBEYROAD. _2017.01 ~ 2017.08._
 
 - #### **한화손해보험 자동차보상 현장업무개선.** _2017.04 ~ 2017.08_
-  <div>
   - 스마트보상 리뉴얼 (Hybrid App)<br>
   - 이글PRM 리뉴얼 (PC Web)<br>
   - 스마트인슈 고도화 (Hybrid App)<br>
-  - html, css<br>
-  </div>
+  - html, css
 
 - - -
 
