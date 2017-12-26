@@ -12,7 +12,7 @@ permalink: /work/
   - 스마트보상 리뉴얼 (Hybrid App)<br>
   - 이글PRM 리뉴얼 (PC Web)<br>
   - 스마트인슈 고도화 (Hybrid App)<br>
-  - html, css
+  - html, css<br>
   </div>
 
 - - -
