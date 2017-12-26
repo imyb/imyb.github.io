@@ -8,12 +8,11 @@ permalink: /work/
 ## ABBEYROAD. _2017.01 ~ 2017.08._
 
 - **한화손해보험 자동차보상 현장업무개선.** _2017.04 ~ 2017.08_
-  <div>
+  <br>
   - 스마트보상 리뉴얼 (Hybrid App)<br>
   - 이글PRM 리뉴얼 (PC Web)<br>
   - 스마트인슈 고도화 (Hybrid App)<br>
   - html, css<br>
-  </div>
 
 - - -
 
@@ -21,19 +20,16 @@ permalink: /work/
 ## FREELANCER. _2016.04 ~ 2016.09._
 
 - **PS&M 리뉴얼.**  _2016.07 ~ 2016.07_
-  <div>
+  <br>
   html, css, js
-  </div>
 
 - **네이처리퍼블릭 모바일웹 리뉴얼.**  _2016.05 ~ 2016.06_
-  <div>
+  <br>
   html, css, js
-  </div>
 
 - **올가홀푸드 모바일웹 리뉴얼.**  _2016.04 ~ 2016.05_
-  <div>
+  <br>
   html, css, js
-  </div>
 
 
 - - -
@@ -42,9 +38,8 @@ permalink: /work/
 ## PCN. _2014.06 ~ 2015.08._
 
 - **삼성서울병원 2차 고도화.**  _2014.08  ~ 2015.08_
-  <div>
+  <br>
   html, css, js
-  </div>
 
 
 - - -
@@ -53,36 +48,30 @@ permalink: /work/
 ## PIXDINE. _2011.01 ~ 2013.09._
 
 - **법무법인 태평양 리뉴얼.** _2013.07 ~ 2013.09_
-  <div>
+  <br>
   웹퍼블리싱 PL<br>
   html, css<br>
-  </div>
 
 - **삼성SDS mySingle v7 고도화.**  _2013.02 ~ 2013.06_
-  <div>
+  <br>
   html, css<br>
-  </div>
 
 - **AJ렌터카 리뉴얼.**  _2012.12 ~ 2013.01_
-  <div>
+  <br>
   html, css<br>
-  </div>
 
 - **삼성SDS mySingle v6.5 고도화.**  _2012.02 ~ 2012.06_
-  <div>
+  <br>
   html, css<br>
-  </div>
 
 - **삼성SDS 멀티캠퍼스 리뉴얼.**  _2011.07 ~ 2011.11_
-  <div>
+  <br>
   웹퍼블리싱 PL<br>
   html, css, js<br>
-  </div>
 
 - **한국 코카콜라 리뉴얼.**  _2011.01 ~ 2011.04_
-  <div>
+  <br>
   html, css<br>
-  </div>
 
 
 - - -
@@ -91,21 +80,18 @@ permalink: /work/
 ## ONNETSOFT. _2009.06 ~ 2010.11._
 
 - **한국교직원공제회 리뉴얼.**  _2010.01 ~ 2010.04_
-  <div>
+  <br>
   웹퍼블리싱 PL<br>
   웹접근성 인증마크 획득<br>
   html, css, js<br>
-  </div>
 
 - **동서울대학교 리뉴얼.**  _2009.10 ~ 2010.01_
-  <div>
+  <br>
   웹퍼블리싱 PL<br>
   웹접근성 인증마크 획득<br>
   html, css, js<br>
-  </div>
 
 - **한국장애인고용공단 리뉴얼.**  _2009.06 ~ 2009.08_
-  <div>
+  <br>
   웹접근성 인증마크 획득<br>
   html, css<br>
-  </div>
