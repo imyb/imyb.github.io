@@ -64,8 +64,6 @@ permalink: /about/
 
 ### Tools
 - SublimeText3
-- EditPlus
-- Eclipse
 - Adobe Photoshop
 - Github
 - Google^^
