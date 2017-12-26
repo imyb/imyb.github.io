@@ -15,7 +15,7 @@ permalink: /work/
   - html, css
 
 
-* * *
+- - -
 
 
 **FREELANCER.** 2016.04 ~ 2016.09.
@@ -33,7 +33,7 @@ permalink: /work/
   - html, css, js
 
 
-<br>
+- - -
 
 
 **PCN.** 2014.06 ~ 2015.08.
@@ -44,7 +44,7 @@ permalink: /work/
   - html, css, js
 
 
-<br>
+- - -
 
 
 **PIXDINE.** 2011.01 ~ 2013.09.
@@ -86,7 +86,7 @@ permalink: /work/
   - html, css
 
 
-<br>
+- - -
 
 
 **ONNETSOFT.** 2009.06 ~ 2010.11.
